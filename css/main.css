@@ -1,0 +1,140 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 54.5em;
+  gap: 20px;
+}
+
+.profile img {
+  margin-top: 4em;
+  width: 352px;
+}
+
+.profile h1 {
+  color: var(--corTitulo);
+  font-size: 3.75rem;
+  position: relative;
+}
+
+.profile::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #fdfec4;
+  position: absolute;
+  top: 56.5%;
+  right: 1264px;
+  z-index: 1;
+}
+
+.profile h2 {
+  font-family: "Fira Code", monospace;
+  color: var(--corTitulo);
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.profile img {
+  border-radius: 100%;
+}
+
+.profile footer {
+  margin-top: 11em;
+  display: flex;
+  width: 100%;
+  height: 7.25em;
+  padding-bottom: 1em;
+}
+
+.profile footer .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 320px;
+}
+
+.profile footer .left img {
+  width: 60px;
+  height: 60px;
+  margin-top: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 0%;
+}
+
+.profile footer .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 340px;
+}
+
+.profile footer .right h2 {
+  font-size: 1em;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 0px 40px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 44.8em;
+    gap: 20px;
+  }
+
+  .profile::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #fdfec4;
+    position: absolute;
+    top: 54.4%;
+    right: 84%;
+    z-index: 1;
+  }
+
+  .profile img {
+    margin-top: 4em;
+    width: 252px;
+  }
+
+  .profile h1 {
+    color: var(--corTitulo);
+    font-size: 1.6rem;
+  }
+
+  .profile h2 {
+    font-family: "Fira Code", monospace;
+    color: var(--corTitulo);
+    font-size: 1.4rem;
+  }
+
+  .profile footer {
+    margin-top: 6em;
+    display: flex;
+    width: 100%;
+  }
+
+  .profile footer .left {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .profile footer .right {
+    display: none;
+  }
+}

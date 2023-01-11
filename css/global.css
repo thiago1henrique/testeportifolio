@@ -1,0 +1,28 @@
+:root {
+  --corTitulo: #f4f4f4;
+  background-image: linear-gradient(to bottom, #1e1e1e, #141414);
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin: 0px;
+  background-image: linear-gradient(to bottom, #1e1e1e, #141414);
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
